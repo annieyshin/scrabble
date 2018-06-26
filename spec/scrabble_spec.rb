@@ -31,4 +31,8 @@ end
   word = Word.new('K')
   expect(word.gets_score()).to(eq(5))
   end
+  it "returns a scrabble score fo the letter J" do
+  word = Word.new("j")
+  expect(word.gets_score()).to(eq(8))
+  end
 end
