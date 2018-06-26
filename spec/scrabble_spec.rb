@@ -26,5 +26,9 @@ end
   it("returns a scrabble score for the letter F") do
   word = Word.new("F")
   expect(word.gets_score()).to(eq(4))
-  end 
+  end
+  it "returns a scrabble score for the letter K" do
+  word = Word.new('K')
+  expect(word.gets_score()).to(eq(5))
+  end
 end
