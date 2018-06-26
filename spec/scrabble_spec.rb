@@ -11,4 +11,16 @@ end
   word = Word.new("E")
   expect(word.gets_score()).to(eq(1))
 end
+  it("returns a scrabble score for a letter") do
+  word = Word.new("G")
+  expect(word.gets_score()).to(eq(2))
+  end
+  it("returns a scrabble score for a letter") do
+  word = Word.new("d")
+  expect(word.gets_score()).to(eq(2))
+  end
+  it("returns a scrabble score for a letter") do
+  word = Word.new("m")
+  expect(word.gets_score()).to(eq(3))
+  end
 end
