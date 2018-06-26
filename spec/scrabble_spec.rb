@@ -39,4 +39,8 @@ end
   word = Word.new("q")
   expect(word.gets_score()).to(eq(10))
   end
+  it "returns a scrabble score for the word dog" do
+    word = Word.new('dog')
+    expect(word.gets_score()).to(eq(5))
+  end
 end
