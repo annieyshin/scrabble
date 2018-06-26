@@ -23,4 +23,8 @@ end
   word = Word.new("m")
   expect(word.gets_score()).to(eq(3))
   end
+  it("returns a scrabble score for the letter F") do
+  word = Word.new("F")
+  expect(word.gets_score()).to(eq(4))
+  end 
 end
